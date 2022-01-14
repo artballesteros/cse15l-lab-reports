@@ -1,4 +1,4 @@
-# Lab Report 1 - Week 2
+# Lab Report 1 - Remote Access
 ![Terminal Screen-shot](imgs/lab1/terminalScreenshot.png)
 
 ## Installing VScode
