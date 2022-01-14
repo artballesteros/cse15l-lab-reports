@@ -115,6 +115,8 @@ nvim WhereAmI.java; scp WhereAmI.java cs15lwi22atd@ieng6.ucsd.edu:~/ ; ssh cs15l
 
 The semicolons allows for multiple commands to exist on the same line while the double quotes group commands that can then be run together on the remote server after logging into it.
 
+The command automatically allows me to edit the file before sending it. Once changes are saved, the command automatically continues. You can replace “nvim” with “code” to use vscode as a text editor.
+
 This isn't very useful for editing different files but at least now I can simply press the up arrow to return to this command any time I need to update WhereAmI.java.
 
 ![Shortcut command](imgs/lab1/shortcutCommands.png)
