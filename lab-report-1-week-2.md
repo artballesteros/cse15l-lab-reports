@@ -7,7 +7,7 @@ I had VSCode already installed, so I didn't need to do anything extra. I will in
 
 It is pretty straigtforward to install VSCode on MacOS and Windows. However, the operating system I use for this class is Fedora OS. It is a GNU/Linux distribution, so I had to follow a different set of steps to install VSCode onto my laptop. 
 
-It wasn't too hard. The VSCode website does a good job of explaining how to install it on different GNU/Linux distributions. 
+It wasn't too hard. The [VSCode website](https://code.visualstudio.com/docs/setup/linux) does a good job of explaining how to install it on different GNU/Linux distributions. 
 
 Down below, you can see the website one would need to visit. 
 
@@ -38,7 +38,7 @@ In the end, you will have VSCode on your computer. It will look like this.
 
 A task we had to complete involved accessing remote server. To do this, we first needed to reset our school account password. Afterwards, we needed to find our designated server directory.
 
-You can do this by going here: https://sdacs.ucsd.edu/~icc/index.php
+You can do this by going here: [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)
 
 Afterwards, all you have to do is run the following command with the account number replaced with your own. It will follow the following format.
 
@@ -118,6 +118,14 @@ The semicolons allows for multiple commands to exist on the same line while the 
 The command automatically allows me to edit the file before sending it. Once changes are saved, the command automatically continues. You can replace “nvim” with “code” to use vscode as a text editor.
 
 This isn't very useful for editing different files but at least now I can simply press the up arrow to return to this command any time I need to update WhereAmI.java.
+
+Total number of keystrokes would be equivalent to the number of uparrow key presses it would take to reach the previously written command on the terminal. This could be anything between 1 keystroke to 100 keystrokes or more. To allow for more consistency, I could paste the command into a file and just copy it into the terminal anytime I needed it. This would require 5 keystrokes (with mouse clicks): 
+
+- Keystroke/click 1: open file
+- Keystroke/click 2: select string
+- Keystroke/click 3: copy string
+- Keystroke/click 4: paste string into terminal
+- Keystroke/click 5: press enter to start command
 
 ![Shortcut command](imgs/lab1/shortcutCommands.png)
 
