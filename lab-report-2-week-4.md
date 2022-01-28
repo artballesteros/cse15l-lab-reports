@@ -98,10 +98,21 @@ In summary, the program was storing all types of links between an opening and cl
 
 ## Third Code Change: test-file7.md
 ---
-Our final mardown file is [test-file7.md](misc/test-file7.md):
+Our final markdown file is [test-file7.md](misc/test-file7.md):
 
 ```markdown
 )[
 ```
+This markdown file is the smallest one yet! However, when passed as an argument into the program, it would cause it to run forever (Symptom).
 
-This file would create
+![](imgs/lab2/errorThree.png)
+
+This was happening for a similar reason the first markdown file was causing an unwanted behavior. The search for the closing bracket and parenthesis was happening after the position of the opening bracket. This meant they would be never found and reset ```currentIndex``` to zero like the test-file2.md did. (Bug)
+
+To fix this issue, we made the following changes to our code: 
+
+![](imgs/lab2/diff3.png)
+
+These changes ensure that the programs while loop only runs whenever there are a complete pair of parenthesis or brackets.
+
+This isn't the best solution, but it is compatible with all current test cases. Ideally, we should just skip the substrings that don't satisfy our criteria instead of breaking out completely. 
