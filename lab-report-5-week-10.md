@@ -97,3 +97,7 @@ exclamation mark in front of the two square braces like so:
 ```
 
 We could add something that checks for this exclamation mark and skips ahead to the next link when detected. We would set ```currentIndex``` to the last closed parenthesis of the image link and then use the ```continue``` statement to skip to the next link that we find. 
+
+We would add this checker after line 12 because we would want to ensure that we would skip an entire code block instead of just a part of it. If we placed the checker before line 12, there is a possibility that we will detect the exclamation mark inside the code block and then skip to the next closed bracket, which will likely also be inside the code block. For the code block detection to work properly, it looks like we would need both triple ticks (```) on both sides of the code blocks, which we possibly lose in the scenario above.  
+
+So checking for image links after checking for code blocks seems like a better option. 
